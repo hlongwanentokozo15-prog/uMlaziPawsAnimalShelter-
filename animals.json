@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Buddy",
+    "species": "Dog",
+    "breed": "Mixed Breed",
+    "ageYears": 2,
+    "age": "Approximately 2 years",
+    "image": "dog-buddy",
+    "alt": "Buddy, a brown mixed-breed dog available for adoption",
+    "description": "Buddy is a friendly, energetic dog who loves playing fetch and going for walks. He's great with children and would do best in a home with a yard to run around in.",
+    "available": true
+  },
+  {
+    "id": 2,
+    "name": "Whiskers",
+    "species": "Cat",
+    "breed": "Domestic Shorthair",
+    "ageYears": 1,
+    "age": "Approximately 1 year",
+    "image": "cat-whiskers",
+    "alt": "Whiskers, a grey tabby cat available for adoption",
+    "description": "Whiskers is a calm, affectionate cat who enjoys quiet spaces and gentle attention. She would suit a peaceful home, ideally without very young children.",
+    "available": true
+  },
+  {
+    "id": 3,
+    "name": "Max",
+    "species": "Dog",
+    "breed": "Mixed Breed",
+    "ageYears": 4,
+    "age": "Approximately 4 years",
+    "image": "dog-max",
+    "alt": "Max, a black and white dog available for adoption",
+    "description": "Max is a gentle, well-behaved senior dog who's already house-trained and gets along well with other pets. He's looking for a calm home to settle into for good.",
+    "available": true
+  }
+]

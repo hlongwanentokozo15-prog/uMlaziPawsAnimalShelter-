@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /images/screenshot-
+
+Sitemap: https://YOUR-SITE.netlify.app/sitemap.xml

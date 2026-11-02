@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoption, Volunteer and Sponsor Enquiries | uMlazi Paws</title>
+    <meta name="description" content="Send an enquiry to uMlazi Paws about adopting an animal, volunteering or becoming a sponsor. We reply as soon as possible.">
+    <meta name="keywords" content="animal shelter Durban, adopt a dog, adopt a cat, uMlazi, rescue animals">
+    <meta property="og:title" content="Adoption, Volunteer and Sponsor Enquiries | uMlazi Paws">
+    <meta property="og:description" content="Send an enquiry to uMlazi Paws about adopting an animal, volunteering or becoming a sponsor. We reply as soon as possible.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/hero-dog.jpg">
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a class="skip" href="#main">Skip to main content</a>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <img src="images/logo.jpg" alt="uMlazi Paws Shelter Logo" class="logo">
+        <p class="site-name">uMlazi Paws Animal Shelter</p>
+        <p>Rescue. Rehabilitate. Rehome.</p>
+    </header>
+
+    <!-- ===== NAVIGATION MENU ===== -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="adoptions.html">Adoptable Animals</a></li>
+            <li><a href="enquiry.html" aria-current="page">Enquire</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main id="main">
+
+        <section id="intro">
+            <h1>Get in Touch</h1>
+            <p>
+                Whether you'd like to adopt an animal, volunteer your time, or become a
+                sponsor, we'd love to hear from you. Fill out the form below and a
+                member of our team will respond as soon as possible.
+            </p>
+        </section>
+
+        <!-- Enquiry form: supports adoption, volunteering, and sponsorship enquiries -->
+        <section id="enquiry-form">
+            <form id="enquiryForm" action="https://formspree.io/f/mqppgwzp" method="post" novalidate>
+
+                <!-- Enquiry type dropdown - lets the visitor choose why they're contacting us -->
+                <label for="enquiry-type">I am enquiring about:</label>
+                <select id="enquiry-type" name="enquiry-type" required>
+                    <option value="">-- Please select --</option>
+                    <option value="adoption">Adopting an Animal</option>
+                    <option value="volunteering">Volunteering</option>
+                    <option value="sponsorship">Becoming a Sponsor</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" minlength="2" maxlength="60" autocomplete="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="e.g. 0821234567" autocomplete="tel">
+
+                <!-- Only relevant if the visitor is enquiring about a specific animal -->
+                <label for="animal-name">Animal's Name (if enquiring about adoption):</label>
+                <input type="text" id="animal-name" name="animal-name" list="animal-list" maxlength="40">
+
+                <label for="visit-date">Preferred visit date (optional, Monday to Saturday):</label>
+                <input type="date" id="visit-date" name="visit-date">
+
+                <label for="message">Your Message (20 to 500 characters):</label>
+                <textarea id="message" name="message" rows="6" minlength="20" maxlength="500" required></textarea>
+
+                <datalist id="animal-list"></datalist>
+                <button type="submit">Submit Enquiry</button>
+                <p id="formStatus" role="status" aria-live="polite"></p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p>&copy; 2026 uMlazi Paws Animal Shelter. All rights reserved.</p>
+        <p>Durban, KwaZulu-Natal, South Africa</p>
+        <p><a href="index.html">Home</a> | <a href="about.html">About Us</a> | <a href="adoptions.html">Adoptable Animals</a> | <a href="enquiry.html">Enquire</a> | <a href="contact.html">Contact</a></p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

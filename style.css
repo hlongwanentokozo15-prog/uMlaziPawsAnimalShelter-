@@ -1,0 +1,227 @@
+/* ===== DESIGN TOKENS: one source for all colours and spacing ===== */
+:root{--teal:#2a9d8f;--teal-dark:#21867a;--orange:#f4a261;--gold:#e9c46a;--ink:#264653;--text:#333;--radius:8px;--card-bg:#f9f9f9;--card-border:#ddd}
+
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fdfdfd;
+    color: #333;
+}
+
+/* ===== HEADER ===== */
+header {
+    background-color: var(--orange);
+    color: white;
+    text-align: center;
+    padding: 1.5em;
+}
+header h1 {
+    margin-bottom: 0.3em;
+}
+
+/* ===== NAVIGATION ===== */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: var(--teal);
+    padding: 0.8em;
+}
+nav ul li {
+    margin: 0 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: var(--gold);
+}
+
+/* ===== MAIN CONTENT ===== */
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+main h2 {
+    color: var(--teal);
+    margin-bottom: 10px;
+}
+main p {
+    margin-bottom: 15px;
+}
+
+/* ===== ANIMAL PROFILES ===== */
+.animal-profile {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.animal-profile img {
+    max-width: 250px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* ===== FORMS ===== */
+form {
+    background: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+form input, form textarea, form select, form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+form button {
+    background-color: var(--teal);
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+form button:hover {
+    background-color: var(--teal-dark);
+}
+fieldset {
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+legend {
+    font-weight: bold;
+    color: var(--teal);
+}
+
+/* ===== LOCATIONS ===== */
+.location {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* ===== MAP ===== */
+#map iframe {
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: var(--orange);
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin-top: 20px;
+}
+
+/* Styling all images */
+img {
+    border: 2px solid #333;
+    margin: 10px;
+    width: 200px;
+    height: auto;
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+header h1 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* ===== PART 3 ADDITIONS ===== */
+header .site-name{display:inline-block;vertical-align:middle;font-size:2em;font-weight:bold;margin-bottom:.15em}
+main h1{color:var(--teal);margin-bottom:10px}
+.skip{position:absolute;left:-999px;background:#fff;color:#333;padding:.5em 1em;z-index:2000}
+.skip:focus{left:0}
+nav a[aria-current="page"]{color:var(--gold);border-bottom:2px solid var(--gold)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+footer a{color:#fff}
+#hero img{width:100%;max-height:420px;object-fit:cover;margin:0 0 15px}
+.cta-button{display:inline-block;background:var(--teal);color:#fff;padding:.7em 1.4em;border-radius:5px;text-decoration:none;font-weight:bold;transition:transform .2s,background-color .2s}
+.cta-button:hover{background:var(--teal-dark);transform:scale(1.05)}
+.animal-profile img{width:100%;max-width:250px;margin:0 0 10px;cursor:zoom-in}
+.animal-profile{transition:box-shadow .3s,transform .3s}
+.animal-profile:hover{box-shadow:0 6px 14px rgba(0,0,0,.15);transform:translateY(-3px)}
+/* Gallery + lightbox */
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.gallery img{width:100%;height:200px;object-fit:cover;margin:0;cursor:zoom-in;transition:transform .3s}
+.gallery img:hover{transform:scale(1.04)}
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.88);display:flex;align-items:center;justify-content:center;z-index:1000;animation:fade .25s}
+.lightbox[hidden]{display:none}
+.lightbox img{width:auto;max-width:92%;max-height:85vh;margin:0}
+.lightbox button{position:absolute;top:10px;right:20px;font-size:2.5rem;background:none;border:0;color:#fff;cursor:pointer}
+/* Accordion */
+.acc-btn{display:block;width:100%;text-align:left;background:#e6f4f1;border:0;border-bottom:2px solid #fff;padding:12px 15px;font:bold 1rem Arial,sans-serif;color:var(--ink);cursor:pointer}
+.acc-btn::after{content:"+";float:right}
+.acc-btn[aria-expanded="true"]::after{content:"\2212"}
+.acc-panel{max-height:0;overflow:hidden;padding:0 15px;transition:max-height .35s ease}
+.acc-btn[aria-expanded="true"]+.acc-panel{max-height:300px}
+/* Search controls, forms, map */
+#controls{background:#f1f1f1;padding:15px;border-radius:8px;margin-bottom:20px}
+#controls label{display:block;margin-top:8px;font-weight:bold}
+#controls input,#controls select{width:100%;padding:10px;margin-top:4px;border:1px solid #ccc;border-radius:5px}
+.error-msg{display:block;color:#b3261e;font-size:.9em;margin-top:4px}
+.invalid{border-color:#b3261e!important}
+#formStatus{margin-top:12px;font-weight:bold}
+#formStatus.ok{color:#1b6b60}#formStatus.bad{color:#b3261e}
+#leaflet-map{height:400px;border-radius:8px;margin-top:15px;z-index:0}
+/* Scroll reveal */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.reveal.show{opacity:1;transform:none}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+/* ===== RESPONSIVE ===== */
+@media (max-width:768px){
+  nav ul{flex-wrap:wrap;gap:6px 0}
+  nav ul li{margin:0 12px}
+  main{padding:15px}
+  .animal-profile img{max-width:100%}
+}
+@media (max-width:480px){
+  header .site-name{font-size:1.4em}
+  nav ul{flex-direction:column;align-items:center}
+  #leaflet-map{height:300px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+
+/* ===== CONSISTENCY FIXES (Part 3) ===== */
+body,button,input,select,textarea{font-family:Arial,sans-serif}
+button,input,select,textarea{font-size:1rem}
+main h1,main h2{color:var(--teal)}
+main h3{color:var(--ink);margin-bottom:8px}
+.animal-profile,.location{background:var(--card-bg);border:1px solid var(--card-border);border-radius:var(--radius);padding:15px;margin-bottom:20px}
+.logo{border:0;margin:0 10px 0 0}
+header,footer{background-color:var(--orange)}
+header .site-name,header p{color:#fff}
+.cta-button,form button{border-radius:5px;padding:.7em 1.4em;font-weight:bold}

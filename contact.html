@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact uMlazi Paws | Shelter Locations and Map, Durban</title>
+    <meta name="description" content="Find the uMlazi shelter and the Durban Central donation drop-off point on the map, see opening hours, or send us a message.">
+    <meta name="keywords" content="animal shelter Durban, adopt a dog, adopt a cat, uMlazi, rescue animals">
+    <meta property="og:title" content="Contact uMlazi Paws | Shelter Locations and Map, Durban">
+    <meta property="og:description" content="Find the uMlazi shelter and the Durban Central donation drop-off point on the map, see opening hours, or send us a message.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/hero-dog.jpg">
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "AnimalShelter", "name": "uMlazi Paws Animal Shelter", "telephone": "031 000 0000", "email": "info@umlazipaws.org.za", "address": {"@type": "PostalAddress", "streetAddress": "123 Mangosuthu Highway", "addressLocality": "uMlazi, Durban", "postalCode": "4066", "addressCountry": "ZA"}, "openingHours": "Mo-Sa 09:00-16:00"}, {"@type": "AnimalShelter", "name": "uMlazi Paws Donation & Drop-Off Point", "telephone": "031 739 0331", "address": {"@type": "PostalAddress", "streetAddress": "45 Dr Pixley KaSeme Street", "addressLocality": "Durban Central", "postalCode": "4001", "addressCountry": "ZA"}, "openingHours": "Mo-Fr 09:00-15:00"}]}</script>
+</head>
+<body>
+    <a class="skip" href="#main">Skip to main content</a>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <img src="images/logo.jpg" alt="uMlazi Paws Shelter Logo" class="logo">
+        <p class="site-name">uMlazi Paws Animal Shelter</p>
+        <p>Rescue. Rehabilitate. Rehome.</p>
+    </header>
+
+    <!-- ===== NAVIGATION MENU ===== -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="adoptions.html">Adoptable Animals</a></li>
+            <li><a href="enquiry.html">Enquire</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main id="main">
+
+        <section id="intro">
+            <h1>Contact Us</h1>
+            <p>
+                Have a question, or want to visit us in person? Reach out using the
+                details below, or drop by one of our two locations in Durban.
+            </p>
+        </section>
+
+        <!-- Contact details for both locations -->
+        <section id="locations">
+
+            <article class="location">
+                <h3>Main Shelter &mdash; uMlazi</h3>
+                <p>123 Mangosuthu Highway, uMlazi, Durban, 4066</p>
+                <p>Tel: 031 000 0000</p>
+                <p>Email: info@umlazipaws.org.za</p>
+                <p>Open: Monday &ndash; Saturday, 9am &ndash; 4pm</p>
+            </article>
+
+            <article class="location">
+                <h3>Donation &amp; Drop-Off Point &mdash; Durban Central</h3>
+                <p>45 Dr Pixley KaSeme Street, Durban Central, Durban, 4001</p>
+                <p>Tel: 031 739 0331</p>
+                <p>Open: Monday &ndash; Friday, 9am &ndash; 3pm</p>
+            </article>
+
+        </section>
+
+        <!-- Map showing both shelter locations -->
+        <section id="map">
+            <h2>Find Us</h2>
+            <div id="leaflet-map" role="region" aria-label="Map showing both uMlazi Paws locations"></div>
+            <noscript><p>Enable JavaScript to view the map, or use the addresses above.</p></noscript>
+        </section>
+
+        <!-- General contact form -->
+        <section id="contact-form">
+            <h2>Send Us a Message</h2>
+            <form id="contactForm" action="#" method="post" novalidate>
+
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" minlength="2" maxlength="60" autocomplete="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="e.g. 0821234567" autocomplete="tel" required>
+
+                <label for="msg-type">Type of message:</label>
+                <select id="msg-type" name="msg-type" required>
+                    <option value="">-- Please select --</option>
+                    <option>General question</option>
+                    <option>Donation</option>
+                    <option>Visit the shelter</option>
+                    <option>Other</option>
+                </select>
+
+                <label for="message">Your Message (20 to 500 characters):</label>
+                <textarea id="message" name="message" rows="6" minlength="20" maxlength="500" required></textarea>
+
+                <button type="submit">Open Email to Send</button>
+                <p id="formStatus" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p>&copy; 2026 uMlazi Paws Animal Shelter. All rights reserved.</p>
+        <p>Durban, KwaZulu-Natal, South Africa</p>
+        <p><a href="index.html">Home</a> | <a href="about.html">About Us</a> | <a href="adoptions.html">Adoptable Animals</a> | <a href="enquiry.html">Enquire</a> | <a href="contact.html">Contact</a></p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

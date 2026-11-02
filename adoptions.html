@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt a Dog or Cat in Durban | uMlazi Paws</title>
+    <meta name="description" content="Search and filter the rescued dogs and cats at uMlazi Paws that are vaccinated, dewormed and ready for adoption in Durban.">
+    <meta name="keywords" content="animal shelter Durban, adopt a dog, adopt a cat, uMlazi, rescue animals">
+    <meta property="og:title" content="Adopt a Dog or Cat in Durban | uMlazi Paws">
+    <meta property="og:description" content="Search and filter the rescued dogs and cats at uMlazi Paws that are vaccinated, dewormed and ready for adoption in Durban.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/hero-dog.jpg">
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a class="skip" href="#main">Skip to main content</a>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <img src="images/logo.jpg" alt="uMlazi Paws Shelter Logo" class="logo">
+        <p class="site-name">uMlazi Paws Animal Shelter</p>
+        <p>Rescue. Rehabilitate. Rehome.</p>
+    </header>
+
+    <!-- ===== NAVIGATION MENU ===== -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="adoptions.html" aria-current="page">Adoptable Animals</a></li>
+            <li><a href="enquiry.html">Enquire</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main id="main">
+
+        <section id="intro">
+            <h1>Meet Our Animals</h1>
+            <p>
+                Every animal at uMlazi Paws has been rescued from the streets or
+                surrendered by owners who could no longer care for them. Each one has
+                been vaccinated, dewormed, and assessed by our team before being made
+                available for adoption. Below are just some of the animals currently
+                looking for their forever homes.
+            </p>
+        </section>
+
+        <!-- Each animal is its own article - a self-contained piece of content -->
+        <section id="controls" aria-label="Search and filter animals">
+            <label for="search">Search by name or description:</label>
+            <input type="search" id="search" placeholder="e.g. Buddy, calm, yard">
+            <label for="species">Species:</label>
+            <select id="species"><option value="all">All animals</option><option>Dog</option><option>Cat</option></select>
+            <label for="sort">Sort by:</label>
+            <select id="sort"><option value="name">Name (A to Z)</option><option value="young">Youngest first</option><option value="old">Oldest first</option></select>
+            <p id="result-count" role="status" aria-live="polite"></p>
+        </section>
+
+        <section id="adoptable-animals">
+
+            <article class="animal-profile">
+                <img src="images/dog-buddy.jpg" data-full="images/large/dog-buddy.jpg" data-lightbox loading="lazy" alt="Buddy, a brown mixed-breed dog available for adoption">
+                <h3>Buddy</h3>
+                <p><strong>Species:</strong> Dog &mdash; Mixed Breed</p>
+                <p><strong>Age:</strong> Approximately 2 years</p>
+                <p>
+                    Buddy is a friendly, energetic dog who loves playing fetch and going
+                    for walks. He's great with children and would do best in a home with
+                    a yard to run around in.
+                </p>
+            </article>
+
+            <article class="animal-profile">
+                <img src="images/cat-whiskers.jpg" data-full="images/large/cat-whiskers.jpg" data-lightbox loading="lazy" alt="Whiskers, a grey tabby cat available for adoption">
+                <h3>Whiskers</h3>
+                <p><strong>Species:</strong> Cat &mdash; Domestic Shorthair</p>
+                <p><strong>Age:</strong> Approximately 1 year</p>
+                <p>
+                    Whiskers is a calm, affectionate cat who enjoys quiet spaces and
+                    gentle attention. She would suit a peaceful home, ideally without
+                    very young children.
+                </p>
+            </article>
+
+            <article class="animal-profile">
+                <img src="images/dog-max.jpg" data-full="images/large/dog-max.jpg" data-lightbox loading="lazy" alt="Max, a black and white dog available for adoption">
+                <h3>Max</h3>
+                <p><strong>Species:</strong> Dog &mdash; Mixed Breed</p>
+                <p><strong>Age:</strong> Approximately 4 years</p>
+                <p>
+                    Max is a gentle, well-behaved senior dog who's already house-trained
+                    and gets along well with other pets. He's looking for a calm home to
+                    settle into for good.
+                </p>
+            </article>
+
+        </section>
+
+        <section id="faq">
+            <h2>Adoption Questions</h2>
+            <div class="accordion">
+                <button class="acc-btn" aria-expanded="false">Are the animals vaccinated?</button>
+                <div class="acc-panel"><p>Yes. Every animal is vaccinated, dewormed and assessed by our team before it is made available for adoption.</p></div>
+                <button class="acc-btn" aria-expanded="false">What happens after I send an enquiry?</button>
+                <div class="acc-panel"><p>A team member contacts you to arrange a meet-and-greet, a home suitability check and the final adoption paperwork.</p></div>
+                <button class="acc-btn" aria-expanded="false">Can I visit the animals first?</button>
+                <div class="acc-panel"><p>Yes. Our main shelter in uMlazi is open Monday to Saturday, 9am to 4pm. See the <a href="contact.html">contact page</a> for directions.</p></div>
+            </div>
+        </section>
+
+        <section id="adoption-process">
+            <h2>Our Adoption Process</h2>
+            <p>
+                Interested in adopting one of our animals? Simply fill out our
+                <a href="enquiry.html">enquiry form</a>, and a member of our team will
+                be in touch to arrange a meet-and-greet, a home suitability check, and
+                the final adoption paperwork.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p>&copy; 2026 uMlazi Paws Animal Shelter. All rights reserved.</p>
+        <p>Durban, KwaZulu-Natal, South Africa</p>
+        <p><a href="index.html">Home</a> | <a href="about.html">About Us</a> | <a href="adoptions.html">Adoptable Animals</a> | <a href="enquiry.html">Enquire</a> | <a href="contact.html">Contact</a></p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
